@@ -1,0 +1,557 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="utf-8">
+<title>#7HTML - Comments: Try It</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<link rel="stylesheet" href="webdevelopers-online-coder-html.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/tabicon.png" />
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<div class="container">
+  <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-lg-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#categories">HTML - Comments</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#me">About me</a>
+      </li>
+	  
+	   <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</header>
+<iframe src="https://codepen.io/pen/" class="onlinecompiler">
+</iframe>
+<section class="sec1" id="categories">
+<div class="container">
+<div class="row">
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML - Comments</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Comment is a piece of code which is ignored by any web browser. It is a good practice to add comments into your HTML code, especially in complex documents, 
+to indicate sections of a document, and any other notes to anyone looking at the code.
+ Comments help you and others understand your code and increases code readability.
+ <br/>
+ HTML comments are placed in between <b>&lt;!-- ... --&gt;</b> tags. So, any content placed with-in &lt;!-- ... --&gt; tags will be treated as comment and will be completely ignored by the browser.
+<br/>
+Example
+ </p>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>  <!-- Document Header Starts -->
+      <title>This is document title</title>
+   </head> <!-- Document Header Ends -->
+	
+   <body>
+      <p>Document content goes here.....</p>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<br/>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Valid vs Invalid Comments</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Comments do not nest which means a comment cannot be put inside another comment. Second the double-dash sequence "--" may not appear inside a comment except as part of the closing --&gt; tag.
+ You must also make sure that there are no spaces in the start-of comment string.
+<br/>
+Example-
+<br/>
+Here, the given comment is a valid comment and will be wiped off by the browser.
+</p>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Valid Comment Example</title>
+   </head>
+	
+   <body>
+      <!--   This is valid comment -->
+      <p>Document content goes here.....</p>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<br/>
+
+
+
+
+
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+But, following line is not a valid comment and will be displayed by the browser. This is because there is a space between the left angle bracket and the exclamation mark.
+<br/>
+Example-
+</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>  
+      <title>Invalid Comment Example</title>
+   </head>
+	
+   <body>
+      < !--   This is not a valid comment -->
+      <p>Document content goes here.....</p>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Multiline Comments</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+So far we have seen single line comments, but HTML supports multi-line comments as well.
+<br/>
+You can comment multiple lines by the special beginning tag &lt;!-- and ending tag --&gt; placed before the first line and end of the last line as shown in the given example below.
+<br/>
+Example-
+</p>
+</p>
+</div>
+</div>
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>  
+      <title>Multiline Comments</title>
+   </head> 
+	
+   <body>
+      <!-- 
+         This is a multiline comment and it can
+         span through as many as lines you like.
+      -->
+      
+      <p>Document content goes here.....</p>
+   </body>
+	
+</html>
+
+</textarea>
+</h3>
+</div>
+</div>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Conditional Comments</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Conditional comments only work in Internet Explorer (IE) on Windows but they are ignored by other browsers. They are supported from Explorer 5 onwards, and you can use them to give conditional instructions to different versions of IE.
+<br/>
+Example-
+</p>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>  
+      <title>Conditional Comments</title>
+
+      <!--[if IE 6]>
+         Special instructions for IE 6 here
+      <![endif]-->
+   </head> 
+   
+   <body>
+      <p>Document content goes here.....</p>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+You will come across a situation where you will need to apply
+ a different style sheet based on different versions of Internet Explorer, in such situation conditional comments will be helpful.</p>
+</div>
+</div>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Using Comment Tag</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+There are few browsers that support &lt;comment&gt; tag to comment a part of HTML code.
+ <blockquote><p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><b>Note</b> − The &lt;comment&gt; tag deprecated in HTML5. Do not use this element.</p></blockquote>
+ </p>
+ <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+ Example
+ </p>
+</div>
+</div>
+
+
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Using Comment Tag</title>
+   </head>
+	
+   <body>
+      <p>This is <comment>not</comment> Internet Explorer.</p>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+If you are using IE, then it will produce following result −
+<br/>
+"This is Internet Explorer"
+
+<br/>
+But if you are not using IE, then it will produce following result −
+<br/>
+"This is not Internet Explorer"
+ </p>
+</div>
+</div>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Commenting Script Code</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+
+Though you will learn JavaScript with HTML, in a separate tutorial, but here you must make a note that if you are using
+ Java Script or VB Script in your HTML code then it is recommended to put that script code inside proper HTML comments so that old browsers can work properly.
+<br/>
+Example
+ </p>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Commenting Script Code</title>
+      
+      <script>
+         <!-- 
+            document.write("Hello World!")
+         //-->
+      </script>
+   </head>
+	
+   <body>
+      <p>Hello , World!</p>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Commenting Style Sheets</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Though you will learn using style sheets with HTML in a separate tutorial, but here you must make a note that if you are using Cascading Style Sheet (CSS) in your HTML code then it is recommended to put that style sheet code inside proper HTML comments so that old browsers can work properly.
+<br/>
+Example
+</p>
+</div>
+</div>
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Commenting Style Sheets</title>
+      
+      <style>
+         <!--
+            .example {
+               border:1px solid #4a7d49;
+            }
+         //-->
+      </style>
+   </head>
+	
+   <body>
+      <div class = "example">Hello , World!</div>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<i>Don't forget to try these codes on the debugger</i>
+ </p>
+ 
+</div>
+</div>
+
+
+
+
+
+
+</div>
+<center><button onclick="window.location.href = 'Specialize-web-developers-online-coder-8-html-images.html';" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Next Page</button></center>
+
+</section>
+<section class="sec2" id="me">
+<div class="container h100">
+<div class="contentBox h100">
+<div>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">About me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+My name is Evidence Maphutha, I am a young aspirant <i>Front-End Developer,</i> alternatively as well as an <i>IT Support.</i><br/>
+Evil Geniux is my idiom name given by my collegues as they believe I'm creative and multitalented. "I'm just interested in many things."
+I am cut above the rest because of my passion for the ICT industry and I believe that where passion leads, success is guranteed.   
+Accademically, I chose to 
+<span id="dots">...</span><span id="more">
+specialize in systems development majoring in building and maintaining modern systems. 
+This is simply because I believe that ICT infrastructure maintance is an important 
+component within any organization and contributes immensely towards the bottom line, and same applies for system development. <br/>
+<b>Background:</b><br/>
+My careers started ealier when i was at pre-school, the time i was messing around with my brother's desktop computer. Customizing it, installing bunch of softwares and replacing hardware parts.
+I can say I spent  80% of my time indoor playing swiftly and in an uncontrollable way.<br/>
+I was encountering issues with the computer during the span of its life on the other hand seeking for solutions. 
+When i was at high school, I volunteered to assist my brother to run his Electronics Workshop during weekends. He was not good at mending computers and installations. <br/>
+My role was to maintain, repairing computers/laptops, flashing/updating/unbricking mobile devices.(Till current)<br/>
+<b>Mission:</b><br/>
+I created this Website to share solutions, tips and tricks to overcome issues you might unexpectedly experiencing
+</span></p>
+<button onclick="myFunction()" id="myBtn" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Read More</button>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Contact me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">If you have a specific question or suggestion for Evil Geniux.</p>
+</div>
+</div>
+</div>
+<div class="row clearfix">
+<div class="offset-sm-2 col-sm-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<form>
+<div class="form-group">
+<label>Name</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Email</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Phone</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Message</label>
+<textarea class="form-control textarea" name="" ></textarea>
+</div>
+<div class="form-group text-center">
+<button class="btn btnD1">Send</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<ul class="sci">
+<li><a href="https://www.facebook.com/OFFICIALLEFTINTHEDARK/"><i class="fa fa-facebook"></i></a></li><!--fontawesome icon-->
+<li><a href="#"><i class="fa fa-twitter"></i></a></li><!--fontawesome icon-->
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li><!--fontawesome icon-->
+<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--fontawesome icon-->
+<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--fontawesome icon-->
+</ul>
+<p class="cpryt">
+<span class="copyright">&copy;</span>Copyright 2019 | Evil Geniux. <a  href="#"> Terms and Conditions applied. </a></p>
+</div>
+</div>
+</div>
+</footer>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script type="text/javascript">
+$(document).scroll(function(){
+$('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+});
+
+</script>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+</body>
+</html>

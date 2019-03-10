@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="utf-8">
+<title>#16HTML - Blocks: Try It</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<link rel="stylesheet" href="webdevelopers-online-coder-html.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/tabicon.png" />
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<div class="container">
+  <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-lg-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#categories">HTML - Blocks</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#me">About me</a>
+      </li>
+	  
+	   <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</header>
+<iframe src="https://codepen.io/pen/" class="onlinecompiler">
+</iframe>
+<section class="sec1" id="categories">
+<div class="container">
+<div class="row">
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML - Blocks</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+All the HTML elements can be categorized into two categories <b>(a)</b> Block Level Elements <b>(b)</b>Inline Elements.
+ </p>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Block Elements</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Block elements appear on the screen as if they have a line break before and after them. For example, the &lt;p&gt;, &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt;, &lt;pre&gt;, &lt;hr /&gt;, &lt;blockquote&gt;, and &lt;address&gt; elements are all block level elements. They all start on their own new line, and anything that follows them appears on its own new line.
+</p>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Inline Elements</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Inline elements, on the other hand, can appear within sentences and do not have to appear on a new line of their own. The &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;em&gt;, &lt;strong&gt;, &lt;sup&gt;, &lt;sub&gt;, &lt;big&gt;, &lt;small&gt;, &lt;li&gt;, &lt;ins&gt;, &lt;del&gt;, &lt;code&gt;, &lt;cite&gt;, &lt;dfn&gt;, &lt;kbd&gt;, and &lt;var&gt; elements are all inline elements.
+</p>
+
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Grouping HTML Elements</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+There are two important tags which we use very frequently to group various other HTML tags (i) &lt;div&gt; tag and (ii) &lt;span&gt; tag
+</p>
+
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">The &lt;div&gt; tag</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+This is the very important block level tag which plays a big role in grouping various other HTML tags and applying CSS on group of elements. Even now &lt;div&gt; tag can be used to create webpage layout where we define different parts (Left, Right, Top etc.) of the page using &lt;div&gt; tag. This tag does not provide any visual change on the block but this has more meaning when it is used with CSS.
+<br/>
+Example
+<br/>
+Following is a simple example of &lt;div&gt; tag. We will learn Cascading Style Sheet (CSS) in a separate chapter but we used it here to show the usage of &lt;div&gt; tag −
+</p>
+
+
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+   
+   <head>
+      <title>HTML div Tag</title>
+   </head>
+	
+   <body>
+      <!-- First group of tags -->
+      <div style = "color:red">
+         <h4>This is first group</h4>
+         <p>Following is a list of vegetables</p>
+         
+         <ul>
+            <li>Beetroot</li>
+            <li>Ginger</li>
+            <li>Potato</li>
+            <li>Radish</li>
+         </ul>
+      </div>
+
+      <!-- Second group of tags -->
+      <div style = "color:green">
+         <h4>This is second group</h4>
+         <p>Following is a list of fruits</p>
+         
+         <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>Strawberry</li>
+         </ul>
+      </div>
+   </body>
+   
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<br/>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">The &lt;span&gt; tag</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+The HTML &lt;span&gt; is an inline element and it can be used to group inline-elements in an HTML document. This tag also does not provide any visual change on the block but has more meaning when it is used with CSS.
+<br/>
+The difference between the &lt;span&gt; tag and the &lt;div&gt; tag is that the &lt;span&gt; tag is used with inline elements whereas the &lt;div&gt; tag is used with block-level elements.
+
+<br/>
+Example
+<br/>
+Following is a simple example of &lt;span&gt; tag. We will learn Cascading Style Sheet (CSS) in a separate chapter but we used it here to show the usage of &lt;span&gt; tag −
+</p>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML span Tag</title>
+   </head>
+	
+   <body>
+      <p>This is <span style = "color:red">red</span> and this is
+         <span style = "color:green">green</span></p>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<i>Keep trying these codes on the debugger above</i>
+ </p>
+ 
+</div>
+</div>
+
+
+
+
+
+
+</div>
+<center><button onclick="window.location.href = 'Specialize-web-developers-online-coder-17-html-backrounds.html';" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Next Page</button></center>
+
+</section>
+<section class="sec2" id="me">
+<div class="container h100">
+<div class="contentBox h100">
+<div>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">About me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+My name is Evidence Maphutha, I am a young aspirant <i>Front-End Developer,</i> alternatively as well as an <i>IT Support.</i><br/>
+Evil Geniux is my idiom name given by my collegues as they believe I'm creative and multitalented. "I'm just interested in many things."
+I am cut above the rest because of my passion for the ICT industry and I believe that where passion leads, success is guranteed.   
+Accademically, I chose to 
+<span id="dots">...</span><span id="more">
+specialize in systems development majoring in building and maintaining modern systems. 
+This is simply because I believe that ICT infrastructure maintance is an important 
+component within any organization and contributes immensely towards the bottom line, and same applies for system development. <br/>
+<b>Background:</b><br/>
+My careers started ealier when i was at pre-school, the time i was messing around with my brother's desktop computer. Customizing it, installing bunch of softwares and replacing hardware parts.
+I can say I spent  80% of my time indoor playing swiftly and in an uncontrollable way.<br/>
+I was encountering issues with the computer during the span of its life on the other hand seeking for solutions. 
+When i was at high school, I volunteered to assist my brother to run his Electronics Workshop during weekends. He was not good at mending computers and installations. <br/>
+My role was to maintain, repairing computers/laptops, flashing/updating/unbricking mobile devices.(Till current)<br/>
+<b>Mission:</b><br/>
+I created this Website to share solutions, tips and tricks to overcome issues you might unexpectedly experiencing
+</span></p>
+<button onclick="myFunction()" id="myBtn" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Read More</button>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Contact me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">If you have a specific question or suggestion for Evil Geniux.</p>
+</div>
+</div>
+</div>
+<div class="row clearfix">
+<div class="offset-sm-2 col-sm-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<form>
+<div class="form-group">
+<label>Name</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Email</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Phone</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Message</label>
+<textarea class="form-control textarea" name="" ></textarea>
+</div>
+<div class="form-group text-center">
+<button class="btn btnD1">Send</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<ul class="sci">
+<li><a href="https://www.facebook.com/OFFICIALLEFTINTHEDARK/"><i class="fa fa-facebook"></i></a></li><!--fontawesome icon-->
+<li><a href="#"><i class="fa fa-twitter"></i></a></li><!--fontawesome icon-->
+<li><a href="#"><i class="fa fa-google-plus"></i></a></li><!--fontawesome icon-->
+<li><a href="#"><i class="fa fa-linkedin"></i></a></li><!--fontawesome icon-->
+<li><a href="#"><i class="fa fa-instagram"></i></a></li><!--fontawesome icon-->
+</ul>
+<p class="cpryt">
+<span class="copyright">&copy;</span>Copyright 2019 | Evil Geniux. <a  href="#"> Terms and Conditions applied. </a></p>
+</div>
+</div>
+</div>
+</footer>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script type="text/javascript">
+$(document).scroll(function(){
+$('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+});
+
+</script>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+</body>
+</html>
