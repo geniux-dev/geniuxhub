@@ -870,6 +870,10 @@ img.img-modal
 
 @media (min-width: 200px) and (max-width: 767px)
  {
+	 .banner {
+
+    padding: 84px 0 0;
+}
 	 	 .placeBox .content h3 span
 {
 	font-size: 15px;
