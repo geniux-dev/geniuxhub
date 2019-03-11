@@ -1038,3 +1038,13 @@ p.aos-init.aos-animate
 
 }
 }
+@media (max-height: 1280px){
+	
+	.placeBox .imgBx {
+    width: 100%;
+    height: 70%;
+}
+.placeBox .content {
+    height: 100%;
+}
+}
