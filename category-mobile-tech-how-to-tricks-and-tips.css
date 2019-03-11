@@ -518,6 +518,10 @@ img.logo{
 @media (max-width: 992px)
 
 {
+		 	 .cpryt {
+  
+    font-size: 1.2rem;
+}
 	
 	.placeBox .content h3 {
 
@@ -888,6 +892,10 @@ img.img-modal
 }
 @media (min-width: 200px) and (max-width: 767px)
  {
+	 	 	 .cpryt {
+  
+    font-size: 1.1rem;
+}
 	 	 .placeBox .content {
     height: 55%;
 }
@@ -1036,6 +1044,10 @@ p.aos-init.aos-animate
 
     FONT-SIZE: 15px;
 
+}
+.cpryt {
+  
+      FONT-SIZE: 1REM;
 }
 }
 @media (max-height: 1280px){

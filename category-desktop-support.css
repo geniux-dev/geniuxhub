@@ -520,6 +520,10 @@ img.logo{
 @media (max-width: 992px)
 
 {
+		 	 .cpryt {
+  
+    font-size: 1.2rem;
+}
 	span.logoname
 {
 	font-size:1.1rem;
@@ -857,6 +861,10 @@ img.img-modal
 
 @media (min-width: 200px) and (max-width: 767px)
  {
+	 	 	 .cpryt {
+  
+    font-size: 1.1rem;
+}
 	 	 .placeBox .content h3 span
 {
 	font-size: 15px;
@@ -1010,6 +1018,9 @@ top: 174px;
     font-size: 18px;
     top: 126px;
 }
-
+	 	 .cpryt {
+  
+    font-size: 1rem;
+}
 
 }

@@ -556,6 +556,10 @@ i.fa.fa-youtube-play
 
 @media (max-width: 992px)
 {
+		 	 .cpryt {
+  
+    font-size: 1.2rem;
+}
 	.banner {
     position: relative;
     top: 0;
@@ -928,6 +932,10 @@ img.img-modal
 }
 @media (min-width: 200px) and (max-width: 767px)
  {
+	 	 	 .cpryt {
+  
+    font-size: 1.1rem;
+}
 	 	.placeBox .content h3 {
     position: relative;
     margin: 0;
@@ -1064,4 +1072,11 @@ p {
 }
 
 	
+}
+
+@media (max-width: 481px){
+	 	 .cpryt {
+  
+    font-size: 1rem;
+}
 }

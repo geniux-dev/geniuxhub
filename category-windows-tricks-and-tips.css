@@ -521,6 +521,10 @@ img.logo{
 @media (max-width: 992px)
 
 {
+		 	 .cpryt {
+  
+    font-size: 1.2rem;
+}
 		svg{
 	    width: 18px;
 }
@@ -873,6 +877,10 @@ img.img-modal
 }
 @media (min-width: 200px) and (max-width: 767px)
  {
+	 	 	 .cpryt {
+  
+    font-size: 1.1rem;
+}
 	 .contentBox p {
     color: #fff;
     font-size: 1.1rem;
@@ -1012,5 +1020,9 @@ p {
 }
 svg{
 	    width: 15px;
+}
+	 	 .cpryt {
+  
+    font-size: 1rem;
 }
 }

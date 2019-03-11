@@ -698,6 +698,10 @@ i.fa.fa-youtube-play
 @media (max-width: 992px)
 
 {
+		 	 .cpryt {
+  
+    font-size: 1.2rem;
+}
 	textarea.textareaUL
 {
 font-size: 1rem;
@@ -1053,6 +1057,10 @@ img.img-modal
 }
 @media (min-width: 200px) and (max-width: 767px)
  {
+	 	 	 .cpryt {
+  
+    font-size: 1.1rem;
+}
 	 .h2, h2 {
     font-size: 1.5rem;
 }
@@ -1161,5 +1169,11 @@ p {
 {
 	
 	width: 80%;
+}
+}
+@media (max-width: 481px){
+	 	 .cpryt {
+  
+    font-size: 1rem;
 }
 }

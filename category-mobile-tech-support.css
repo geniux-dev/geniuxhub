@@ -520,6 +520,10 @@ img.logo{
 @media (max-width: 992px)
 
 {
+		 	 .cpryt {
+  
+    font-size: 1.2rem;
+}
 	.placeBox .content h3 {
     position: relative;
     margin: 0;
@@ -871,6 +875,10 @@ img.img-modal
 
 @media (min-width: 200px) and (max-width: 767px)
  {
+	 	 	 .cpryt {
+  
+    font-size: 1.1rem;
+}
 	 .banner {
 
     padding: 84px 0 0;
@@ -1029,5 +1037,9 @@ top: 148px;
 .placeBox .content h3 {
     font-size: 18px;
     top: 100px;
+}
+	 	 .cpryt {
+  
+    font-size: 1rem;
 }
 }
