@@ -238,7 +238,6 @@ p {
 }
 .sec1
 {
-	padding: 100px 0;
 	background: #000;
 }
 .headerText
@@ -690,10 +689,7 @@ img.logo{
     padding-right: 1rem;
     padding-left: 1rem;
     }
-	.sec1
-	{
-		padding: 20px 0;
-	}
+
 	.headerText h2 {
     font-size: 2rem;
 	padding-top: 50px;
