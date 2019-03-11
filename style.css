@@ -179,7 +179,7 @@ p {
 	background: url(images/banner1.jpg);
 	background-size: cover;
 	background-position: center;
-
+	margin-bottom: 0;
 }
 .banner:before,
 .sec2:before,
@@ -238,7 +238,6 @@ p {
 }
 .sec1
 {
-	padding: 100px 0;
 	background: #000;
 }
 .headerText
@@ -486,7 +485,7 @@ p.modal-h
 	background: url(images/wallpapers-for-programmers_5499915.jpg);
 	background-size: cover;
 	background-position: center;
-	min-height: 100vh;
+
 }
 span#moreq.display{
 	background:77px;
@@ -690,10 +689,7 @@ img.logo{
     padding-right: 1rem;
     padding-left: 1rem;
     }
-	.sec1
-	{
-		padding: 20px 0;
-	}
+
 	.headerText h2 {
     font-size: 2rem;
 	padding-top: 50px;
