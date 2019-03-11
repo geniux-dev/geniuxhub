@@ -82,6 +82,7 @@ p {
     height: 100vh;
     background: url(images/banner1.jpg);
     background-size: cover;
+	background-position: center;
     margin-bottom: 0;
 }
 .banner:before,
@@ -524,6 +525,7 @@ div#home.jumbotron.jumbotron-fluid.height100p.banner{
     height: 100vh;
     background: url(images/banner1.jpg);
     background-size: cover;
+	background-position: center;
     margin-bottom: 0;
 }
 
@@ -567,6 +569,7 @@ i.fa.fa-youtube-play
     height: 100vh;
     background: url(images/banner1.jpg);
     background-size: cover;
+	background-position: center;
     margin-bottom: 0;
 }
 	.placeBox .content h3
