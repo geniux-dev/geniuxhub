@@ -7,6 +7,7 @@
 body
 {
 	font-family: 'Poppins',sans-serif;
+	background-color: #000;
 }
 
 
@@ -485,7 +486,7 @@ p.modal-h
 	background: url(images/wallpapers-for-programmers_5499915.jpg);
 	background-size: cover;
 	background-position: center;
-
+	
 }
 span#moreq.display{
 	background:77px;
