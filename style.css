@@ -178,7 +178,7 @@ p {
 	height: 100vh;
 	background: url(images/banner1.jpg);
 	background-size: cover;
-
+	background-position: center;
 	margin-bottom: 0;
 }
 .banner:before,
@@ -413,7 +413,7 @@ p.modal-h
 	position: relative;
 	background: url(images/1_9wHrewC1Dyf2Au_qEqwWcg.jpeg);
 	background-size: cover;
-
+	background-position: center;
 	height: 100vh;
 }
 
@@ -485,7 +485,7 @@ p.modal-h
 	padding: 100px 0;
 	background: url(images/wallpapers-for-programmers_5499915.jpg);
 	background-size: cover;
-
+	background-position: center;
 	min-height: 100vh;
 }
 span#moreq.display{
@@ -977,7 +977,7 @@ img.img-modal
 	height: 100vh;
 	background: url(images/banner1480p.jpg);
 	background-size: cover;
-
+	background-position: center;
 	margin-bottom: 0;
 }
 	 	 .placeBox .content h3 span
