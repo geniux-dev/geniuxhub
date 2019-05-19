@@ -1,0 +1,555 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="utf-8">
+<title>#14HTML - Frames: Try It</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<link rel="stylesheet" href="webdevelopers-online-coder-html.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/tabicon.png" />
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<div class="container">
+  <a class="navbar-brand" href="https://theevilgeniux.github.io/"><img src="images/logo.png" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-lg-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#categories">HTML - Frames</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#me">About me</a>
+      </li>
+	  
+	   <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</header>
+<iframe src="https://codepen.io/pen/" class="onlinecompiler">
+</iframe>
+<section class="sec1" id="categories">
+<div class="container">
+<div class="row">
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML - Frames</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. 
+The window is divided into frames in a similar way the tables are organized: into rows and columns.
+ </p>
+
+</div>
+</div>
+</div>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Disadvantages of Frames</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+There are few drawbacks with using frames, so it's never recommended to use frames in your webpages −
+<ul class="list">
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p>Some smaller devices cannot cope with frames often because their screen is not big enough to be divided up.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p>Sometimes your page will be displayed differently on different computers due to different screen resolution.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p>The browser's <i>back</i> button might not work as the user hopes.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p>There are still few browsers that do not support frame technology.</p></li>
+</ul>
+</p>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Creating Frames</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+
+
+To use frames on a page we use &lt;frameset&gt; tag instead of &lt;body&gt; tag. The &lt;frameset&gt; tag defines, how to divide the window into frames. The <b>rows</b> attribute of &lt;frameset&gt; tag defines horizontal frames and <b>cols</b> 
+attribute defines vertical frames. Each frame is indicated by &lt;frame&gt; tag and it defines which HTML document shall open into the frame.
+<blockquote data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>Note</b> − The &lt;frame&gt; tag deprecated in HTML5. Do not use this element.</p></blockquote>
+</p>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Example<br/>
+Following is the example to create three horizontal frames −
+</p>
+
+</div>
+</div>
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Frames</title>
+   </head>
+	
+   <frameset rows = "10%,80%,10%">
+      <frame name = "top" src = "/html/top_frame.htm" />
+      <frame name = "main" src = "/html/main_frame.htm" />
+      <frame name = "bottom" src = "/html/bottom_frame.htm" />
+   
+      <noframes>
+         <body>Your browser does not support frames.</body>
+      </noframes>
+      
+   </frameset>
+   
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">The &lt;frameset&gt; Tag Attributes</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Following are important attributes of the &lt;frameset&gt; tag −
+<table class="table table-bordered" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<tbody><tr class="table-header">
+<th>Sr.No</th>
+<th style="text-align:center">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">1</td>
+<td>
+<p><b>cols</b></p>
+<p>Specifies how many columns are contained in the frameset and the size of each column. You can specify the width of each column in one of the four ways −</p>
+<p>Absolute values in pixels. For example, to create three vertical frames, use <i>cols = "100, 500, 100"</i>.</p>
+<p>A percentage of the browser window. For example, to create three vertical frames, use <i>cols = "10%, 80%, 10%"</i>.</p>
+<p>Using a wildcard symbol. For example, to create three vertical frames, use <i>cols = "10%, *, 10%"</i>. In this case wildcard takes remainder of the window.</p>
+<p>As relative widths of the browser window. For example, to create three vertical frames, use <i>cols = "3*, 2*, 1*"</i>. This is an alternative to percentages. You can use relative widths of the browser window. Here the window is divided into sixths: the first column takes up half of the window, the second takes one third, and the third takes one sixth.</p>
+</td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">2</td>
+<td>
+<p><b>rows</b></p>
+<p>This attribute works just like the cols attribute and takes the same values, but it is used to specify the rows in the frameset. For example, to create two horizontal frames, use <i>rows = "10%, 90%"</i>. You can specify the height of each row in the same way as explained above for columns.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">3</td>
+<td>
+<p><b>border</b></p>
+<p>This attribute specifies the width of the border of each frame in pixels. For example, border = "5". A value of zero means no border.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">4</td>
+<td>
+<p><b>frameborder</b></p>
+<p>This attribute specifies whether a three-dimensional border should be displayed between frames. This attribute takes value either 1 (yes) or 0 (no). For example frameborder = "0" specifies no border.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">5</td>
+<td>
+<p><b>framespacing</b></p>
+<p>This attribute specifies the amount of space between frames in a frameset. This can take any integer value. For example framespacing = "10" means there should be 10 pixels spacing between each frames.</p></td>
+</tr>
+</tbody></table>
+</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">The &lt;frame&gt; Tag Attributes</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Following are the important attributes of &lt;frame&gt; tag −
+<table class="table table-bordered" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<tbody><tr class="table-header">
+<th>Sr.No</th>
+<th style="text-align:center;">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">1</td>
+<td>
+<p><b>src</b></p>
+<p>This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">2</td>
+<td>
+<p><b>name</b></p>
+<p>This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into. This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">3</td>
+<td>
+<p><b>frameborder</b></p>
+<p>This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the &lt;frameset&gt; tag if one is given, and this can take values either 1 (yes) or 0 (no).</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">4</td>
+<td>
+<p><b>marginwidth</b></p>
+<p>This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. The value is given in pixels. For example marginwidth = "10".</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">5</td>
+<td>
+<p><b>marginheight</b></p>
+<p>This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents. The value is given in pixels. For example marginheight = "10".</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">6</td>
+<td>
+<p><b>noresize</b></p>
+<p>By default, you can resize any frame by clicking and dragging on the borders of a frame. The noresize attribute prevents a user from being able to resize the frame. For example noresize = "noresize".</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">7</td>
+<td>
+<p><b>scrolling</b></p>
+<p>This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". For example scrolling = "no" means it should not have scroll bars.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">8</td>
+<td>
+<p><b>longdesc</b></p>
+<p>This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = "framedescription.htm"</p></td>
+</tr>
+</tbody></table>
+
+
+
+</p>
+</div>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Browser Support for Frames</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+If a user is using any old browser or any browser, which does not support frames then &lt;noframes&gt; element should be displayed to the user.
+<br/>
+So you must place a &lt;body&gt; element inside the &lt;noframes&gt; element because the &lt;frameset&gt; element is supposed to replace the &lt;body&gt; element, but if a 
+browser does not understand &lt;frameset&gt; element then it should
+ understand what is inside the &lt;body&gt; element which is contained in a &lt;noframes&gt; element.
+<br/>
+You can put some nice message for your user having old browsers. For example, <i>Sorry!! your browser does not support frames.</i> as shown in the above example.
+ </p>
+</div>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Frame's name and target attributes</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+One of the most popular uses of frames is to place navigation bars in one frame and then load main pages into a separate frame.
+<br/>
+Let's see following example where a test.htm file has following code −
+</p>
+</div>
+</div>
+
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Target Frames</title>
+   </head>
+	
+   <frameset cols = "200, *">
+      <frame src = "/html/menu.htm" name = "menu_page" />
+      <frame src = "/html/main.htm" name = "main_page" />
+      
+      <noframes>
+         <body>Your browser does not support frames.</body>
+      </noframes>
+   </frameset>
+	
+</html>
+
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Here, we have created two columns to fill with two frames. The first frame is 200 pixels wide and will 
+contain the navigation menu bar implemented by <b>menu.htm</b> file. The second column fills in remaining 
+space and will contain the main part of the page and it is implemented by <b>main.htm</b> file. 
+For all the three links available in menu bar, we have mentioned target frame as <b>main_page</b>, 
+so whenever you click any of the links in menu bar, available link will open in main page.
+<br/>
+Following is the content of menu.htm file
+</p>
+</p>
+</div>
+</div>
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <body bgcolor = "#4a7d49">
+      <a href = "http://www.google.com" target = "main_page">Google</a>
+      <br />
+      <br />
+      
+      <a href = "http://www.microsoft.com" target = "main_page">Microsoft</a>
+      <br />
+      <br />
+      
+      <a href = "http://news.bbc.co.uk" target = "main_page">BBC News</a>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+</div>
+<br/>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+
+Following is the content of main.htm file −
+</p>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <body bgcolor = "#b5dcb3">
+      <h3>This is main page and content from any link will be displayed here.</h3>
+      <p>So now click any link and see the result.</p>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Now you can try to click links available in the left panel and see the result. The <i>targetattribute</i> can also take one of the following values −
+<table class="table table-bordered" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<tbody><tr class="table-header">
+<th>Sr.No</th>
+<th style="text-align:center;">Option &amp; Description</th>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">1</td>
+<td>
+<p><b>_self</b></p>
+<p>Loads the page into the current frame.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">2</td>
+<td>
+<p><b>_blank</b></p>
+<p>Loads a page into a new browser window. Opening a new window.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">3</td>
+<td>
+<p><b>_parent</b></p>
+<p>Loads the page into the parent window, which in the case of a single frameset is the main browser window.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">4</td>
+<td>
+<p><b>_top</b></p>
+<p>Loads the page into the browser window, replacing any current frames.</p></td>
+</tr>
+<tr>
+<td style="text-align:center;vertical-align:middle">5</td>
+<td>
+<p><b>targetframe</b></p>
+<p>Loads the page into a named targetframe.</p></td>
+</tr>
+</tbody></table>
+ </p>
+</div>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<i>Don't forget to try these codes on the debugger</i>
+ </p>
+ 
+</div>
+</div>
+
+
+
+
+
+
+</div>
+<center><button onclick="window.location.href = 'Specialize-web-developers-online-coder-15-html-iframes.html';" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Next Page</button></center>
+
+</section>
+<section class="sec2" id="me">
+<div class="container h100">
+<div class="contentBox h100">
+<div>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">About me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+My name is Evidence Maphutha, Young Aspirant UI & UX Designer/Developer, as well as an IT Support.<br/>
+Geniux is my idiom name given by my collegues as they believe I'm creative and multitalented. "I'm just interested in many things."
+I am cut above the rest because of my passion for the ICT industry and I believe that where passion leads, success is guranteed.   
+Accademically, I chose to 
+<span id="dots">...</span><span id="more">
+specialize in systems development majoring in building and maintaining modern systems. 
+This is simply because I believe that ICT infrastructure maintance is an important 
+component within any organization and contributes immensely towards the bottom line, and same applies for system development. <br/>
+<b>Mission:</b><br/>
+I created this Website to share solutions, tips and tricks to overcome issues you might unexpectedly experiencing
+</span></p>
+<button onclick="myFunction()" id="myBtn" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Read More</button>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Contact me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">If you have a specific question or suggestion for Geniux.</p>
+</div>
+</div>
+</div>
+<div class="row clearfix">
+<div class="offset-sm-2 col-sm-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<form>
+<div class="form-group">
+<label>Name</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Email</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Phone</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Message</label>
+<textarea class="form-control textarea" name="" ></textarea>
+</div>
+<div class="form-group text-center">
+<button class="btn btnD1">Send</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<ul class="sci">
+<li><a href="https://www.facebook.com/theevilgeniux.0" target="_blank"><i class="fa fa-facebook"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.instagram.com/danotorious_beats/" target="_blank"><i class="fa fa-instagram"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.youtube.com/channel/UCSXkqnImiOzch4LJPLHe1Pw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" style="color:#777"></i></a></li><!--fontawesome icon-->
+<li><a href="mailto:theevilgeniux@gmail.com" target="_top" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.linkedin.com/in/evidence-maphutha-6766b9131/" target="_blank"><i class="fa fa-linkedin"></i></a></li><!--fontawesome icon-->
+
+</ul>
+<p class="cpryt">
+<span class="copyright">&copy;</span>Copyright 2019 | Processing was initiated and developed by Evidence Maphutha. <BR/><a style="color:white"> Terms and Conditions applied. </a></p>
+</div>
+</div>
+</div>
+</footer>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script type="text/javascript">
+$(document).scroll(function(){
+$('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+});
+
+</script>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,768 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="utf-8">
+<title>#9HTML - Tables: Try It</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<link rel="stylesheet" href="webdevelopers-online-coder-html.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/tabicon.png" />
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<div class="container">
+  <a class="navbar-brand" href="https://theevilgeniux.github.io/"><img src="images/logo.png" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-lg-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#categories">HTML - Tables</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#me">About me</a>
+      </li>
+	  
+	   <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</header>
+<iframe src="https://codepen.io/pen/" class="onlinecompiler">
+</iframe>
+<section class="sec1" id="categories">
+<div class="container">
+<div class="row">
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML - Tables<h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.
+ <br/>
+ The HTML tables are created using the <b>&lt;table&gt;</b> tag in which the <b>&lt;tr&gt;</b> tag is used to create table rows and <b>&lt;td&gt;</b> tag is used to create data cells. The elements under &lt;td&gt; are regular and left aligned by default
+ <br/>
+Example
+ </p>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Tables</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+         </tr>
+      </table>
+      
+   </body>
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<br/>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Here, the <b>border</b> is an attribute of &lt;table&gt; tag and it is used to put a border across all the cells. If you do not need a border, then you can use border = "0".
+</p>
+</div>
+</div>
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Table Heading<h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Table heading can be defined using <b>&lt;th&gt;</b> tag. 
+This tag will be put to replace &lt;td&gt; tag, which is used to represent actual data cell. 
+Normally you will put your top row as table heading as shown below, otherwise you can use &lt;th&gt; 
+element in any row. Headings, which are defined in &lt;th&gt; tag are centered and bold by default.
+<br/>
+Example-
+</p>
+</div>
+</div>
+
+
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table Header</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <th>Name</th>
+            <th>Salary</th>
+         </tr>
+         <tr>
+            <td>Ramesh Raman</td>
+            <td>5000</td>
+         </tr>
+         
+         <tr>
+            <td>Shabbir Hussein</td>
+            <td>7000</td>
+         </tr>
+      </table>
+   </body>
+   
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<br/>
+
+
+
+
+
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Cellpadding and Cellspacing Attributes<h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+There are two attributes called <i>cellpadding</i> and <i>cellspacing</i> which you will use to adjust the white space in your table cells.
+ The cellspacing attribute defines space between table cells, while cellpadding represents the distance between cell borders and the content within a cell.
+
+<br/>
+Example-
+</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table Cellpadding</title>
+   </head>
+	
+   <body>
+      <table border = "1" cellpadding = "5" cellspacing = "5">
+         <tr>
+            <th>Name</th>
+            <th>Salary</th>
+         </tr>
+         <tr>
+            <td>Ramesh Raman</td>
+            <td>5000</td>
+         </tr>
+         <tr>
+            <td>Shabbir Hussein</td>
+            <td>7000</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Colspan and Rowspan Attributes</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+
+You will use <b>colspan</b> attribute if you want to merge two or more columns into a single column. Similar way you will use <b>rowspan</b> if you want to merge two or more rows.
+<br/>
+Example-
+</p>
+</p>
+</div>
+</div>
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table Colspan/Rowspan</title>
+   </head>
+	
+   <body>
+      <table border = "1">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+
+</textarea>
+</h3>
+</div>
+</div>
+</div>
+<br/>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Tables Backgrounds</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+You can set table background using one of the following two ways −
+
+<ul class="list">
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>bgcolor</b> attribute − You can set background color for whole table or just for one cell.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>background</b> attribute − You can set background image for whole table or just for one cell.</p></li>
+</ul>
+</p>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+You can also set border color also using <b>bordercolor</b> attribute.
+<blockquote><p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><b>Note</b> − The <i>bgcolor</i>, <i>background</i>, and <i>bordercolor</i> attributes deprecated in HTML5. Do not use these attributes.</p></blockquote>
+</p>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Example-
+</p>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table Background</title>
+   </head>
+	
+   <body>
+      <table border = "1" bordercolor = "green" bgcolor = "yellow">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Here is an example of using <b>background</b> attribute. Here we will use an image available in /images directory.
+<br/>
+<i>
+Our debugger wont be able to relocate the image. you are recommended to put html file and test.png in the same folder then run it with your browser.
+</i>
+</div>
+</div>
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table Background</title>
+   </head>
+	
+   <body>
+      <table border = "1" bordercolor = "green" background = "test.png">
+         <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+         </tr>
+         <tr>
+            <td rowspan = "2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td><td>Row 1 Cell 3</td>
+         </tr>
+         <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+         </tr>
+         <tr>
+            <td colspan = "3">Row 3 Cell 1</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Table Height and Width</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+You can set a table width and height using <b>width</b> and <b>height</b> attributes. 
+You can specify table width or height in terms of pixels or in terms of percentage of available screen area.
+<br/>
+Example-
+ </p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table Width/Height</title>
+   </head>
+	
+   <body>
+      <table border = "1" width = "400" height = "150">
+         <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Table Caption</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+The <b>caption</b> tag will serve as a title or explanation for the table and it shows up at the top of the table. This tag is deprecated in newer version of HTML/XHTML.
+<br/>
+Example
+</p>
+</div>
+</div>
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table Caption</title>
+   </head>
+	
+   <body>
+      <table border = "1" width = "100%">
+         <caption>This is the caption</caption>
+         
+         <tr>
+            <td>row 1, column 1</td><td>row 1, columnn 2</td>
+         </tr>
+         
+         <tr>
+            <td>row 2, column 1</td><td>row 2, columnn 2</td>
+         </tr>
+      </table>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Table Header, Body, and Footer</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Tables can be divided into three portions − a header, a body, and a foot. The head and foot are rather similar to headers and footers in a word-processed document that remain the same for every page, 
+while the body is the main content holder of the table.
+<br/>
+The three elements for separating the head, body, and foot of a table are −
+
+<ul class="list">
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>&lt;thead&gt;</b> − to create a separate table header.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>&lt;tbody&gt;</b> − to indicate the main body of the table.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>&lt;tfoot&gt;</b> − to create a separate table footer.</p></li>
+</ul>
+</p>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+A table may contain several &lt;tbody&gt; elements to indicate <i>different pages</i> or groups of data. 
+But it is notable that &lt;thead&gt; and &lt;tfoot&gt; tags should appear before &lt;tbody&gt;
+<br/>
+Example
+</p>
+</div>
+</div>
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table</title>
+   </head>
+	
+   <body>
+      <table border = "1" width = "100%">
+         <thead>
+            <tr>
+               <td colspan = "4">This is the head of the table</td>
+            </tr>
+         </thead>
+         
+         <tfoot>
+            <tr>
+               <td colspan = "4">This is the foot of the table</td>
+            </tr>
+         </tfoot>
+         
+         <tbody>
+            <tr>
+               <td>Cell 1</td>
+               <td>Cell 2</td>
+               <td>Cell 3</td>
+               <td>Cell 4</td>
+            </tr>
+         </tbody>
+         
+      </table>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Nested Tables</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+You can use one table inside another table. Not only tables you can use almost all the tags inside table data tag &lt;td&gt;.
+<br/>
+Example
+<br/>
+Following is the example of using another table and other tags inside a table cell.
+</p>
+</div>
+</div>
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Table</title>
+   </head>
+	
+   <body>
+      <table border = "1" width = "100%">
+         
+         <tr>
+            <td>
+               <table border = "1" width = "100%">
+                  <tr>
+                     <th>Name</th>
+                     <th>Salary</th>
+                  </tr>
+                  <tr>
+                     <td>Ramesh Raman</td>
+                     <td>5000</td>
+                  </tr>
+                  <tr>
+                     <td>Shabbir Hussein</td>
+                     <td>7000</td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         
+      </table>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<i>Lets keep moving tutors!</i>
+ </p>
+ 
+</div>
+</div>
+
+
+
+
+
+
+</div>
+<center><button onclick="window.location.href = 'Specialize-web-developers-online-coder-10-html-lists.html';" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Next Page</button></center>
+
+</section>
+<section class="sec2" id="me">
+<div class="container h100">
+<div class="contentBox h100">
+<div>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">About me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+My name is Evidence Maphutha, Young Aspirant UI & UX Designer/Developer, as well as an IT Support.<br/>
+Geniux is my idiom name given by my collegues as they believe I'm creative and multitalented. "I'm just interested in many things."
+I am cut above the rest because of my passion for the ICT industry and I believe that where passion leads, success is guranteed.   
+Accademically, I chose to 
+<span id="dots">...</span><span id="more">
+specialize in systems development majoring in building and maintaining modern systems. 
+This is simply because I believe that ICT infrastructure maintance is an important 
+component within any organization and contributes immensely towards the bottom line, and same applies for system development. <br/>
+<b>Mission:</b><br/>
+I created this Website to share solutions, tips and tricks to overcome issues you might unexpectedly experiencing
+</span></p>
+<button onclick="myFunction()" id="myBtn" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Read More</button>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Contact me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">If you have a specific question or suggestion for Geniux.</p>
+</div>
+</div>
+</div>
+<div class="row clearfix">
+<div class="offset-sm-2 col-sm-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<form>
+<div class="form-group">
+<label>Name</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Email</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Phone</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Message</label>
+<textarea class="form-control textarea" name="" ></textarea>
+</div>
+<div class="form-group text-center">
+<button class="btn btnD1">Send</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<ul class="sci">
+<li><a href="https://www.facebook.com/theevilgeniux.0" target="_blank"><i class="fa fa-facebook"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.instagram.com/danotorious_beats/" target="_blank"><i class="fa fa-instagram"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.youtube.com/channel/UCSXkqnImiOzch4LJPLHe1Pw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" style="color:#777"></i></a></li><!--fontawesome icon-->
+<li><a href="mailto:theevilgeniux@gmail.com" target="_top" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.linkedin.com/in/evidence-maphutha-6766b9131/" target="_blank"><i class="fa fa-linkedin"></i></a></li><!--fontawesome icon-->
+
+</ul>
+<p class="cpryt">
+<span class="copyright">&copy;</span>Copyright 2019 | Processing was initiated and developed by Evidence Maphutha. <BR/><a style="color:white"> Terms and Conditions applied. </a></p>
+</div>
+</div>
+</div>
+</footer>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script type="text/javascript">
+$(document).scroll(function(){
+$('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+});
+
+</script>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+</body>
+</html>

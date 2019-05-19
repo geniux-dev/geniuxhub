@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="utf-8">
+<title>#12HTML - Image Links: Try It</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<link rel="stylesheet" href="webdevelopers-online-coder-html.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/tabicon.png" />
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<div class="container">
+  <a class="navbar-brand" href="https://theevilgeniux.github.io/"><img src="images/logo.png" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-lg-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#categories">HTML - Image Links</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#me">About me</a>
+      </li>
+	  
+	   <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</header>
+<iframe src="https://codepen.io/pen/" class="onlinecompiler">
+</iframe>
+<section class="sec1" id="categories">
+<div class="container">
+<div class="row">
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML - Image Links</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+We have seen how to create hypertext link using text and we also learnt how to use images in our webpages. Now, we will learn how to use images to create hyperlinks.
+<br/>
+Example
+<br/>
+It's simple to use an image as hyperlink. We just need to use an image inside hyperlink at the place of text as shown below −
+ </p>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Image Hyperlink Example</title>
+   </head>
+	
+   <body>
+      <p>Click following link</p>
+      <a href = "https://www.facebook.com" target = "_self"> 
+         <img src = "/images/icons/facebookpage.png" alt = "Tutorials Point" border = "0"/> 
+      </a>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+This will produce the result, where you can click on the images to reach to the home page of Facebook Point.
+<br/>
+This was the simplest way of creating hyperlinks using images. Next we will see how we can create Mouse-Sensitive Image Links.
+</p>
+</div>
+</div>
+
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Mouse-Sensitive Images</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+The HTML and XHTML standards provides a feature that lets you embed many different links inside a single image. 
+You can create different links on the single image based on different coordinates available on the image. 
+Once different links are attached to different coordinates, we can click different parts of the image to open target documents. 
+Such mouse-sensitive images are known as image maps.
+<br/>
+There are two ways to create image maps −
+<ul class="list">
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>Server-side image maps</b> − This is enabled by the <b>ismap</b> attribute of the &lt;img&gt; tag and requires access to a server and related image-map processing applications.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>Client-side image maps</b> − This is created with the <b>usemap</b> attribute of the &lt;img&gt; tag, along with corresponding &lt;map&gt; and &lt;area&gt; tags.</p></li>
+</ul>
+</p>
+</div>
+</div>
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Server-Side Image Maps</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Here you simply put your image inside a hyper link and use <b>ismap</b> attribute which makes it special image and when the user clicks some place within the image, the browser passes the coordinates of the mouse pointer along with the URL specified in the &lt;a&gt; tag to the web server. 
+The server uses the mouse-pointer coordinates to determine which document to deliver back to the browser.
+<br/>
+When <i>ismap</i> is used, the href attribute of the containing &lt;a&gt; tag must contain the URL of a server application like a cgi or PHP script etc. to process the incoming request based on the passed coordinates.
+<br/>
+The coordinates of the mouse position are screen pixels counted from the upper-left corner of the image, beginning with (0,0). The coordinates, preceded by a question mark, are added to the end of the URL.
+<br/>
+For example, if a user clicks 20 pixels over and 30 pixels down from the upper-left corner of the following image −
+</br>
+Which has been generated by the following code snippet −
+</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>ISMAP Hyperlink Example</title>
+   </head>
+	
+   <body>
+      <p>Click following link</p>
+      
+      <a href = "/cgi-bin/ismap.cgi" target = "_self"> 
+         <img ismap src = "/images/logo.jpg" alt = "Tutorials Point" border = "0"/> 
+      </a>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<br/>
+
+
+
+
+
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Then the browser sends the following search parameters to the web server which can be processed by <b>ismap.cgi</b> script or <b>map file</b> and 
+you can link whatever documents you like to these coordinates
+<textarea disabled class="codesimg">
+/cgi-bin/ismap.cgi?20,30
+</textarea>
+This way you can assign different links to different coordinates of the image and when those coordinates are clicked, you can open corresponding linked document.
+ To learn more about <b>ismap</b> attribute, you can check <a href="https://www.w3schools.com/tags/att_img_ismap.asp">How to use Image ismap?</a>
+ <blockquote data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>Note</b> − You will learn CGI programming when you will study Perl programming. You can write your script to process these passed coordinates using PHP or any other script as well. For now, 
+ let's concentrate on learning HTML and later you can revisit this section.</p></blockquote>
+</p>
+</div>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Client-Side Image Maps</h2>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Client side image maps are enabled by the <b>usemap</b> attribute of the &lt;img /&gt; tag and defined by special &lt;map&gt; and &lt;area&gt; extension tags.
+<br/>
+The image that is going to form the map is inserted into the page using the &lt;img /&gt; tag as a normal image, except it carries an extra attribute called <b>usemap</b>. The value of the usemap attribute is the value which will be used in a &lt;map&gt; tag to link map and image tags. 
+The &lt;map&gt; along with &lt;area&gt; tags define all the image coordinates and corresponding links.
+<br/>
+The &lt;area&gt; tag inside the map tag, specifies the shape and
+ the coordinates to define the boundaries of each clickable hotspot
+ available on the image. Here's an example from the image map −
+
+</p>
+</div>
+</div>
+
+
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>USEMAP Hyperlink Example</title>
+   </head>
+	
+   <body>
+      <p>Search and click the hotspot</p>
+      <img src = /images/html.gif alt = "HTML Map" border = "0" usemap = "#html"/>
+      <!-- Create  Mappings -->
+      
+      <map name = "html">
+         <area shape = "circle" coords = "80,80,20" 
+            href = "/css/index.htm" alt = "CSS Link" target = "_self" />
+         
+         <area shape = "rect" coords = "5,5,40,40" alt = "jQuery Link" 
+            href = "/jquery/index.htm" target = "_self" />
+      </map>
+   </body>
+   
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Coordinate System</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+The actual value of coords is totally dependent on the shape in question. Here is a summary, to be followed by detailed examples −
+<ul class="list">
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>rect = x<sub><small>1</small></sub> , y<sub><small>1</small></sub> , x<sub><small>2</small></sub> , y<sub><small>2</small></sub></b></p>
+<p>x<sub><small>1</small></sub> and y<sub>1</sub> are the coordinates of the upper left corner of the rectangle; x<sub><small>2</small></sub> and y<sub><small>2</small></sub> are the coordinates of the lower right corner.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>circle = x<sub><small>c</small></sub> , y<sub><small>c</small></sub> , radius</b></p>
+<p>x<sub><small>c</small></sub> and y<sub><small>c</small></sub> are the coordinates of the center of the circle, and radius is the circle's radius. A circle centered at 200,50 with a radius of 25 would have the attribute <i>coords = "200,50,25"</i></p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>poly = x<sub><small>1</small></sub> , y<sub><small>1</small></sub> , x<sub><small>2</small></sub> , y<sub><small>2</small></sub> , x<sub><small>3</small></sub> , y<sub><small>3</small></sub> , ... x<sub><small>n</small></sub> , y<sub><small>n</small></sub></b></p>
+<p>The various x-y pairs define vertices (points) of the polygon, with a "line" being drawn from one point to the next point. A diamond-shaped polygon with its top point at 20,20 and 40 pixels across at its widest points would have the attribute <i>coords = "20,20,40,40,20,60,0,40"</i>.</p></li>
+</ul>
+</p>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+All coordinates are relative to the upper-left corner of the image (0,0). Each shape has a related URL. You can use any image software to know the coordinates of different positions.
+</p>
+</p>
+</div>
+</div>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<i>We going deeper!</i>
+ </p>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+<center><button onclick="window.location.href = 'Specialize-web-developers-online-coder-13-html-email-links.html';" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Next Page</button></center>
+
+</section>
+<section class="sec2" id="me">
+<div class="container h100">
+<div class="contentBox h100">
+<div>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">About me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+My name is Evidence Maphutha, Young Aspirant UI & UX Designer/Developer, as well as an IT Support.<br/>
+Geniux is my idiom name given by my collegues as they believe I'm creative and multitalented. "I'm just interested in many things."
+I am cut above the rest because of my passion for the ICT industry and I believe that where passion leads, success is guranteed.   
+Accademically, I chose to 
+<span id="dots">...</span><span id="more">
+specialize in systems development majoring in building and maintaining modern systems. 
+This is simply because I believe that ICT infrastructure maintance is an important 
+component within any organization and contributes immensely towards the bottom line, and same applies for system development. <br/>
+<b>Mission:</b><br/>
+I created this Website to share solutions, tips and tricks to overcome issues you might unexpectedly experiencing
+</span></p>
+<button onclick="myFunction()" id="myBtn" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Read More</button>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Contact me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">If you have a specific question or suggestion for Geniux.</p>
+</div>
+</div>
+</div>
+<div class="row clearfix">
+<div class="offset-sm-2 col-sm-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<form>
+<div class="form-group">
+<label>Name</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Email</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Phone</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Message</label>
+<textarea class="form-control textarea" name="" ></textarea>
+</div>
+<div class="form-group text-center">
+<button class="btn btnD1">Send</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<ul class="sci">
+<li><a href="https://www.facebook.com/theevilgeniux.0" target="_blank"><i class="fa fa-facebook"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.instagram.com/danotorious_beats/" target="_blank"><i class="fa fa-instagram"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.youtube.com/channel/UCSXkqnImiOzch4LJPLHe1Pw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" style="color:#777"></i></a></li><!--fontawesome icon-->
+<li><a href="mailto:theevilgeniux@gmail.com" target="_top" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.linkedin.com/in/evidence-maphutha-6766b9131/" target="_blank"><i class="fa fa-linkedin"></i></a></li><!--fontawesome icon-->
+
+</ul>
+<p class="cpryt">
+<span class="copyright">&copy;</span>Copyright 2019 | Processing was initiated and developed by Evidence Maphutha. <BR/><a style="color:white"> Terms and Conditions applied. </a></p>
+</div>
+</div>
+</div>
+</footer>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script type="text/javascript">
+$(document).scroll(function(){
+$('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+});
+
+</script>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+</body>
+</html>

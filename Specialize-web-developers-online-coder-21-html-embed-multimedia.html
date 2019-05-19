@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="utf-8">
+<title>#21HTML - Embed Multimedia: Try It</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+<link rel="stylesheet" href="webdevelopers-online-coder-html.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/tabicon.png" />
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<div class="container">
+  <a class="navbar-brand" href="https://theevilgeniux.github.io/"><img src="images/logo.png" class="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-lg-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="#categories">HTML - Embed Multimedia</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="#me">About me</a>
+      </li>
+	  
+	   <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</header>
+<iframe src="https://codepen.io/pen/" class="onlinecompiler">
+</iframe>
+<section class="sec1" id="categories">
+<div class="container">
+<div class="row">
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML - Embed Multimedia</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+Sometimes you need to add music or video into your web page. The easiest way to add video or sound to your web site is to include the special HTML tag called <b>&lt;embed&gt;</b>. 
+This tag causes the browser itself to include controls for the multimedia automatically provided browser supports &lt;embed&gt; tag and given media type.
+
+<br/>
+You can also include a <b>&lt;noembed&gt;</b> tag for the browsers which don't recognize the &lt;embed&gt; tag. You could, for example, use &lt;embed&gt; to display a movie of your choice, and <b>&lt;noembed&gt;</b> to display a single 
+JPG image if browser does not support &lt;embed&gt; tag.
+<br/>
+Example<br/>
+Here is a simple example to play an embedded midi file −
+<br/>
+<br/>
+<i>You are recommended to run this codes directly on your browser, so you will be able to relocate the directory on your <b>gif file</b> and <b>mid file</b></i>
+ </p>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML embed Tag</title>
+   </head>
+	
+   <body>
+      <embed src = "yourfile.mid" width = "100%" height = "60" >
+         <noembed><img src = "yourimage.gif" alt = "Alternative Media" ></noembed>
+      </embed>
+   </body>
+
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<br/>
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">The &lt;embed&gt; Tag Attributes</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Following is the list of important attributes which can be used with &lt;embed&gt; tag.
+<blockquote data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>Note</b> −The <i>align</i> and <i>autostart</i> attributes deprecated in HTML5. Do not use these attributes.</p></blockquote>
+<table class="table table-bordered" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<tbody><tr class="table-header">
+<th>Sr.No</th>
+<th style="text-align:center;">Attribute &amp; Description</th>
+</tr>
+<tr>
+<td class="ts">1</td>
+<td>
+<p><b>align</b></p>
+<p>Determines how to align the object. It can be set to either center, <i>left or right</i>.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">2</td>
+<td>
+<p><b>autostart</b></p>
+<p>This boolean attribute indicates if the media should start automatically. You can set it either true or false.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">3</td>
+<td>
+<p><b>loop</b></p>
+<p>Specifies if the sound should be played continuously (set loop to true), a certain number of times (a positive value) or not at all (false)</p>
+</td>
+</tr>
+<tr>
+<td class="ts">4</td>
+<td>
+<p><b>playcount</b></p>
+<p>Specifies the number of times to play the sound. This is alternate option for <i>loop</i> if you are usiong IE.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">5</td>
+<td>
+<p><b>hidden</b></p>
+<p>Specifies if the multimedia object should be shown on the page. A false value means no and true values means yes.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">6</td>
+<td>
+<p><b>width</b></p>
+<p>Width of the object in pixels</p>
+</td>
+</tr>
+<tr>
+<td class="ts">7</td>
+<td>
+<p><b>height</b></p>
+<p>Height of the object in pixels</p>
+</td>
+</tr>
+<tr>
+<td class="ts">8</td>
+<td>
+<p><b>name</b></p>
+<p>A name used to reference the object.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">9</td>
+<td>
+<p><b>src</b></p>
+<p>URL of the object to be embedded.</p>
+</td>
+</tr>
+<tr>
+<td class="ts">10</td>
+<td>
+<p><b>volume</b></p>
+<p>Controls volume of the sound. Can be from 0 (off) to 100 (full volume).</p>
+</td>
+</tr>
+</tbody></table>
+</p>
+
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Supported Video Types</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+You can use various media types like Flash movies (.swf), AVI's (.avi), and MOV's (.mov) file types inside embed tag.
+<ul class="list">
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>.swf files</b> − are the file types created by Macromedia's Flash program.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>.wmv files</b> − are Microsoft's Window's Media Video file types.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>.mov files</b> − are Apple's Quick Time Movie format.</p></li>
+<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"><p><b>.mpeg files</b> − are movie files created by the Moving Pictures Expert Group.</p></li>
+</ul>
+</p>
+
+</div>
+</div>
+
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML embed Tag</title>
+   </head>
+
+   <body>
+      <embed src = "/html/yourfile.swf" width = "200" height = "200" >
+         <noembed><img src = "yourimage.gif" alt = "Alternative Media" ></noembed>
+      </embed>
+   </body>
+
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+<br/>
+
+
+
+
+
+
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Background Audio</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+You can use HTML <b>&lt;bgsound&gt;</b> tag to play a soundtrack in the background of your webpage. This tag is supported by Internet Explorer only and most of the other browsers ignore this tag. It downloads and plays an audio file when the host document is first downloaded by the user and displayed. 
+The background sound file also will replay whenever the user refreshes the browser.<br/>
+<b>Note</b> − The bgsound tag is deprecated and it is supposed to be removed in a future version of HTML. So they should not be used rather, it's suggested to use HTML5 tag audio for adding sound. But still for learning purpose, this chapter will explain bgsound tag in detail.
+<br/>
+This tag is having only two attributes <i>loop</i> and <i>src</i>. Both these attributes have same meaning as explained above.<br/>
+Here is a simple example to play a small midi file −
+</p>
+</div>
+</div>
+
+<div class="col-sm-4">
+<p class="caption" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML</p>
+<div class="placeBox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<div class="content">
+<h3>	
+<!--HMTL Section-->
+<textarea disabled class="codes">
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML embed Tag</title>
+   </head>
+	
+   <body>
+      <bgsound src = "/html/yourfile.mid">
+         <noembed><img src = "yourimage.gif" ></noembed>
+      </bgsound>
+   </body>
+	
+</html>
+</textarea>
+</h3>
+</div>
+</div>
+<br/>
+</div>
+
+<div class="offset-sm-2 col-sm-8">
+<div class="headerText text-center">
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+This will produce the blank screen. This tag does not display any component and remains hidden.
+<br/>
+Internet Explorer can also handle only three different sound format files − wav, the native format for PCs; au, the native format for most Unix workstations; and MIDI, a universal music-encoding scheme.
+</p>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">HTML Object tag</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+HTML 4 introduces the <b>&lt;object&gt;</b> element, which offers an all-purpose solution to generic object inclusion. The <b>&lt;object&gt;</b> element allows HTML authors to specify everything required by an object for its presentation by a user agent.
+<br/>
+Here are a few examples −<br/>
+<b>Example - 1</b><br/>
+You can embed an HTML document in an HTML document itself as follows −
+<textarea disabled="" class="textareaUL2">
+<object data = "data/test.htm" type = "text/html" width = "300" height = "200">
+alt : <a href = "data/test.htm">test.htm</a>
+</object>
+</textarea>
+</p>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+Here <i>alt</i> attribute will come into picture if browser does not support <i>object</i> tag.
+<b>Example - 2</b><br/>
+You can embed a PDF document in an HTML document as follows −
+<textarea disabled="" class="textareaUL2">
+<object data = "data/test.pdf" type = "application/pdf" width = "300" height = "200">
+alt : <a href = "data/test.pdf">test.htm</a>
+</object>
+</textarea>
+</p>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<b>Example - 3</b><br/>
+You can specify some parameters related to the document with the <b>&lt;param&gt;</b> tag. Here is an example to embed a wav file −
+<textarea disabled class="textareaUL3">
+<object data = "data/test.wav" type = "audio/x-wav" width = "200" height = "20">
+   <param name = "src" value = "data/test.wav">
+   <param name = "autoplay" value = "false">
+   <param name = "autoStart" value = "0">
+   alt : <a href = "data/test.wav">test.wav</a>
+</object>
+</textarea>
+</p>
+
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+<b>Example - 5</b><br/>
+You can add a flash document as follows −
+<textarea disabled class="textareaUL3">
+<object classid = "clsid:8ad9c840-044e-11d1-b3e9-00805f499d93" 
+   width = "200" height = "200">
+   <param name = "code" value = "applet.class">
+</object>
+</textarea>
+<br/>
+The <b>classid</b> attribute identifies which version of Java Plug-in to use. You can use the optional <i>codebase</i> attribute to specify if and how to download the JRE.
+</p>
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+<center><button onclick="window.location.href = 'Specialize-web-developers-online-coder-22-html-marquees.html';" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Next Page</button></center>
+
+</section>
+<section class="sec2" id="me">
+<div class="container h100">
+<div class="contentBox h100">
+<div>
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">About me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+My name is Evidence Maphutha, Young Aspirant UI & UX Designer/Developer, as well as an IT Support.<br/>
+Geniux is my idiom name given by my collegues as they believe I'm creative and multitalented. "I'm just interested in many things."
+I am cut above the rest because of my passion for the ICT industry and I believe that where passion leads, success is guranteed.   
+Accademically, I chose to 
+<span id="dots">...</span><span id="more">
+specialize in systems development majoring in building and maintaining modern systems. 
+This is simply because I believe that ICT infrastructure maintance is an important 
+component within any organization and contributes immensely towards the bottom line, and same applies for system development. <br/>
+<b>Mission:</b><br/>
+I created this Website to share solutions, tips and tricks to overcome issues you might unexpectedly experiencing
+</span></p>
+<button onclick="myFunction()" id="myBtn" class="btn btnD1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Read More</button>
+</div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="headerText text-center">
+<h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">Contact me</h2>
+<p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">If you have a specific question or suggestion for Geniux.</p>
+</div>
+</div>
+</div>
+<div class="row clearfix">
+<div class="offset-sm-2 col-sm-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<form>
+<div class="form-group">
+<label>Name</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Email</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Phone</label>
+<input type="text" name="" class="form-control">
+</div>
+<div class="form-group">
+<label>Message</label>
+<textarea class="form-control textarea" name="" ></textarea>
+</div>
+<div class="form-group text-center">
+<button class="btn btnD1">Send</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<ul class="sci">
+<li><a href="https://www.facebook.com/theevilgeniux.0" target="_blank"><i class="fa fa-facebook"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.instagram.com/danotorious_beats/" target="_blank"><i class="fa fa-instagram"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.youtube.com/channel/UCSXkqnImiOzch4LJPLHe1Pw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true" style="color:#777"></i></a></li><!--fontawesome icon-->
+<li><a href="mailto:theevilgeniux@gmail.com" target="_top" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li><!--fontawesome icon-->
+<li><a href="https://www.linkedin.com/in/evidence-maphutha-6766b9131/" target="_blank"><i class="fa fa-linkedin"></i></a></li><!--fontawesome icon-->
+
+</ul>
+<p class="cpryt">
+<span class="copyright">&copy;</span>Copyright 2019 | Processing was initiated and developed by Evidence Maphutha. <BR/><a style="color:white"> Terms and Conditions applied. </a></p>
+</div>
+</div>
+</div>
+</footer>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script type="text/javascript">
+$(document).scroll(function(){
+$('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+});
+
+</script>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+</body>
+</html>
