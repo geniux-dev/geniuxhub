@@ -521,6 +521,18 @@ padding: 50px 0 0;
     padding: 15px;
     overflow: overlay;
 }
+.col-sm-4 {
+ 
+    display: inline-block;
+	transform
+	  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.col-sm-4:hover{
+	
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
 div#home.jumbotron.jumbotron-fluid.height100p.banner{
 	
     position: relative;
