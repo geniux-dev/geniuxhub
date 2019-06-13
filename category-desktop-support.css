@@ -188,11 +188,11 @@ p {
 {
 	position: relative;
 	margin: 0;
-	padding: 12px;
+	padding: 17px;
 	background: WHITE;
 	color: #000;
-	font-size: 20px;
-	font-weight: 450;
+	font-size: 18px;
+	font-weight: 600;
 	width: 100%;
 	text-align: center;
 }
@@ -201,7 +201,6 @@ p {
 	font-size: 16px;
 	font-weight: 500;
 }
-
 
 
 
@@ -527,6 +526,27 @@ img.logo{
 @media (max-width: 992px)
 
 {
+		.col-sm-4:hover{
+	
+  -webkit-transform: unset;
+  transform: unset;
+}
+		.placeBox .content h3
+{
+	position: relative;
+	margin: 0;
+	padding: 17px;
+	background: white;
+	color: #000;
+	font-size: 16px;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+}
+	 	 .placeBox .content h3 span
+{
+	font-size: 14px;
+}
 		 	 .cpryt {
   
     font-size: 1.2rem;
@@ -874,7 +894,7 @@ img.img-modal
 }
 	 	 .placeBox .content h3 span
 {
-	font-size: 15px;
+	font-size: 14px;
 }
 	 
 .placeBox .content {
@@ -882,9 +902,10 @@ img.img-modal
 }
 .placeBox .content h3 {
 
-    font-size: 18px;
+    font-size: 15px;
 
 }
+	
 	 .placeBox .imgBx {
     width: 100%;
     height: 40%;
@@ -1007,7 +1028,7 @@ p {
 }
 .placeBox .content h3 {
 
-    font-size: 18px;
+    font-size: 16px;
 top: 174px;
 
 }
@@ -1022,7 +1043,7 @@ top: 174px;
     height: 60%;
 }
 .placeBox .content h3 {
-    font-size: 18px;
+    font-size: 15px;
     top: 126px;
 }
 	 	 .cpryt {

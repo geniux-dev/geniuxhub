@@ -186,10 +186,10 @@ p {
 {
 	position: relative;
 	margin: 0;
-	padding: 12px;
+	padding: 15px;
 	background: WHITE;
 	color: #000;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 600;
 	width: 100%;
 	text-align: center;
@@ -527,6 +527,29 @@ img.logo{
 @media (max-width: 992px)
 
 {
+	.placeBox .content h3
+{
+	position: relative;
+	margin: 0;
+	padding: 15px;
+	background: WHITE;
+	color: #000;
+	font-size: 16px;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+}
+.placeBox .content h3 span
+{
+	font-size: 15px;
+	font-weight: 500;
+}
+
+		.col-sm-4:hover{
+	
+  -webkit-transform: unset;
+  transform: unset;
+}
 		 	 .cpryt {
   
     font-size: 1.2rem;
@@ -548,11 +571,7 @@ img.logo{
 
     height: 77%;
 }
-.placeBox .content h3 {
 
-    font-size: 1.1rem;
-	    padding: 13px;
-}
 
 	.navbar-light .navbar-brand, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:visited {
     font-size: 1.5rem;
@@ -1014,7 +1033,7 @@ p {
 }
 .placeBox .content h3 {
 
-    font-size: 18px;
+    font-size: 16px;
 top: 112px;
 
 }
@@ -1033,8 +1052,8 @@ top: 112px;
     height: 60%;
 }
 .placeBox .content h3 {
-    font-size: 18px;
-    top: 72px;
+    font-size: 15px;
+    top: 70px;
 }
 	 	 .cpryt {
   

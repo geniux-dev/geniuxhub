@@ -226,7 +226,7 @@ span#moreq.display{
 	padding: 10px;
 	background: rgba(255, 255, 255,255);
 	color: #000;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 450;
 	width: 100%;
 	text-align: center;
@@ -235,7 +235,7 @@ span#moreq.display{
 }
 .placeBox .content h3 span
 {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 500;
 }
 
@@ -598,6 +598,12 @@ img.logo{
 }
 @media (max-width: 992px)
 {
+		.col-sm-4:hover{
+	
+  -webkit-transform: unset;
+  transform: unset;
+}
+
 		 	 .cpryt {
   
     font-size: 1.2rem;
@@ -647,11 +653,14 @@ img.logo{
 	padding: 10px;
 	background: rgba(255, 255, 255,255);
 	color: #000;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 450;
 	width: 100%;
 	text-align: center;
 
+}
+.placeBox .content h3 span {
+    font-size: 15px;
 }
 .placeBox .imgBx img
 {
@@ -1016,14 +1025,15 @@ VERTICAL-ALIGN: middle;
     padding: 10px;
     background: rgba(255, 255, 255,255);
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 450;
     width: 100%;
     text-align: center;
 	
 }
+
 .placeBox .content h3 span {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 	 .h2, h2 {

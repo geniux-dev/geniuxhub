@@ -530,16 +530,35 @@ img.logo{
 @media (max-width: 992px)
 
 {
+		.col-sm-4:hover{
+	
+  -webkit-transform: unset;
+  transform: unset;
+}
+
 		 	 .cpryt {
   
     font-size: 1.2rem;
 }
 	
-	.placeBox .content h3 {
-
-    padding: 13px;
-	}
-	
+.placeBox .content h3
+{
+	position: relative;
+	margin: 0;
+	padding: 13px;
+	background: rgba(255, 255, 255, 0.95);
+	color: #000;
+	font-size: 15px;
+	font-weight: 450;
+	width: 100%;
+	text-align: center;
+	    top: -34px;
+}
+.placeBox .content h3 span
+{
+	font-size: 14px;
+	font-weight: 500;
+}
 	
 	
 	p.aos-init.aos-animate {
@@ -901,6 +920,7 @@ img.img-modal
     font-size: 16px;
     bottom: 39px;
 }
+
 }
 @media (min-width: 200px) and (max-width: 767px)
  {
@@ -913,7 +933,7 @@ img.img-modal
 }
 .placeBox .content h3 {
 
-    font-size: 18px;
+    font-size: 13px;
 
 }
 	 .placeBox .imgBx {
@@ -1037,8 +1057,20 @@ p {
 	width: 80%;
 }
 }
+@media (max-width: 575px)
+{
+	.placeBox .content h3 {
+
+	font-size: 16px;
+}
+}
+
 @media (max-width: 481px)
 {
+	.placeBox .content h3 {
+
+	font-size: 15px;
+}
 p {
     font-size: 1rem;
 }

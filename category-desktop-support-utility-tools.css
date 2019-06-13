@@ -216,6 +216,10 @@ p.softwarescategories {
 span#moreq.display{
 	display: none;
 }
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
 .placeBox .content h3
 {
 	position: relative;
@@ -223,7 +227,7 @@ span#moreq.display{
 	padding: 10px;
 	background: rgba(255, 255, 255,255);
 	color: #000;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 450;
 	width: 100%;
 	text-align: center;
@@ -592,7 +596,14 @@ img.logo{
 	}
 }
 @media (max-width: 992px)
+
 {
+		.col-sm-4:hover{
+	
+  -webkit-transform: unset;
+  transform: unset;
+}
+	
 		 	 .cpryt {
   
     font-size: 1.2rem;
@@ -641,7 +652,7 @@ img.logo{
 	padding: 10px;
 	background: rgba(255, 255, 255,255);
 	color: #000;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: 450;
 	width: 100%;
 	text-align: center;
@@ -1143,6 +1154,15 @@ p {
 }
 @media (max-width: 481px)
 {
+		 	.placeBox .content h3 {
+
+    font-size: 15px;
+	
+}
+.placeBox .content h3 span {
+    font-size: 15px;
+    font-weight: 600;
+}
 p {
     font-size: 1rem;
 }

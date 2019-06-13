@@ -192,11 +192,11 @@ p {
 {
 	position: relative;
 	margin: 0;
-	padding: 12px;
+	padding: 17px;
 	background: WHITE;
 	color: #000;
-	font-size: 20px;
-	font-weight: 450;
+	font-size: 18px;
+	font-weight: 600;
 	width: 100%;
 	text-align: center;
 }
@@ -535,16 +535,27 @@ img.logo{
   
     font-size: 1.2rem;
 }
-	.placeBox .content h3 {
-    position: relative;
-    margin: 0;
-    padding: 13px;
-    background: white;
-    color: #000;
-    font-size: 18px;
-    font-weight: 450;
-    width: 100%;
-    text-align: center;
+	.col-sm-4:hover{
+	
+  -webkit-transform: unset;
+  transform: unset;
+}
+
+	.placeBox .content h3
+{
+	position: relative;
+	margin: 0;
+	padding: 17px;
+	background: white;
+	color: #000;
+	font-size: 16px;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+}
+	 	 .placeBox .content h3 span
+{
+	font-size: 14px;
 }
 	.contentBox h1{
     font-size: 2rem;
@@ -896,15 +907,15 @@ img.img-modal
 }
 	 	 .placeBox .content h3 span
 {
-	font-size: 15px;
+	font-size: 14px;
 }
 	 
 .placeBox .content {
-    height: 63%;
+    height: 61%;
 }
 .placeBox .content h3 {
 
-    font-size: 18px;
+    font-size: 15px;
 	padding: 15px;
 
 }
@@ -1030,7 +1041,7 @@ p {
 }
 .placeBox .content h3 {
 
-    font-size: 18px;
+    font-size: 16px;
 top: 148px;
 
 }
@@ -1046,7 +1057,7 @@ top: 148px;
     height: 60%;
 }
 .placeBox .content h3 {
-    font-size: 18px;
+    font-size: 16px;
     top: 100px;
 }
 	 	 .cpryt {

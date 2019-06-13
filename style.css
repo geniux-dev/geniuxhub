@@ -287,10 +287,10 @@ p {
 {
 	position: relative;
 	margin: 0;
-	padding: 15px;
+	padding: 17px;
 	background: WHITE;
 	color: #000;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
 	width: 100%;
 	text-align: center;
@@ -588,6 +588,7 @@ padding: 50px 0 0;
     padding-left: 1rem;
 }
 
+
 }
 
 
@@ -627,15 +628,20 @@ img.logo{
 @media (max-width: 992px)
 
 {
+	.col-sm-4:hover{
+	
+  -webkit-transform: unset;
+  transform: unset;
+}
 
 	.placeBox .content h3
 {
 	position: relative;
 	margin: 0;
-	padding: 14px;
+	padding: 17px;
 	background: white;
 	color: #000;
-	font-size: 17px;
+	font-size: 14px;
 	font-weight: 600;
 	width: 100%;
 	text-align: center;
@@ -979,7 +985,7 @@ img.img-modal
 
 	 	 .placeBox .content h3 span
 {
-	font-size: 15px;
+	font-size: 12px;
 }
 	 
 .placeBox .content {
@@ -987,7 +993,7 @@ img.img-modal
 }
 .placeBox .content h3 {
 
-    font-size: 16px;
+    font-size: 12px;
 	    padding: 15px;
 
 }
