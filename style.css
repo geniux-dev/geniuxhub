@@ -1123,6 +1123,9 @@ p {
 top: 174px;
 
 }
+.placeBox .content h3 span {
+    font-size: 14px;
+}
 
 
 }
@@ -1138,6 +1141,9 @@ top: 174px;
 .placeBox .content h3 {
     font-size: 15px;
     top: 126px;
+}
+.placeBox .content h3 span {
+    font-size: 14px;
 }
 .cpryt {
   
