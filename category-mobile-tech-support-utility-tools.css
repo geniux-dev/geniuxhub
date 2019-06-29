@@ -567,7 +567,7 @@ div#home.jumbotron.jumbotron-fluid.height100p.banner{
 }
 i.fa.fa-youtube-play
 {
-    color: #ff0c0c
+   color: #ff0c0c
 }
 
 span.logoname
@@ -587,7 +587,9 @@ img.logo{
 		
 		width:10%;
 	}
-
+img.img-modal-screenshot{
+	width:80%;
+}
 @media (max-width: 321px)
 {
 		img.img-modal
@@ -598,7 +600,11 @@ img.logo{
 }
 @media (max-width: 992px)
 {
+	img.img-modal-screenshot{
+	width:90%;
+}
 		.col-sm-4:hover{
+			
 	
   -webkit-transform: unset;
   transform: unset;
@@ -1012,6 +1018,9 @@ VERTICAL-ALIGN: middle;
 }
 @media (min-width: 200px) and (max-width: 767px)
  {
+	 img.img-modal-screenshot {
+    width: 90%;
+}
 	 	 	 .cpryt {
   
     font-size: 1.1rem;
@@ -1159,6 +1168,9 @@ p {
 }
 @media (max-width: 481px)
 {
+	img.img-modal-screenshot {
+    width: 100%;
+}
 p {
     font-size: 1rem;
 }
